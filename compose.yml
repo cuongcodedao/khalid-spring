@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile2
-    image: khaliddinh/springboot
+    image: cuongcodedao/springboot
     ports:
       - "8082:8080"
     # restart: on-failure
@@ -21,7 +21,7 @@ services:
     container_name: khalid-java-mysql
     image: "mysql:8.0"
     environment:
-      MYSQL_ROOT_PASSWORD: password123_DONG
+      MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: db_example
       MYSQL_USER: khalid
       MYSQL_PASSWORD: password123_DONG
